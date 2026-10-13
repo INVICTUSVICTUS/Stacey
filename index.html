@@ -32,22 +32,23 @@ nav ul a{text-decoration:none;font-size:.88rem;opacity:.85}nav ul a:hover{opacit
 .btn.p{background:var(--burg);color:#fff}.btn.p:hover{filter:brightness(1.12)}
 .btn.o{border-color:#ffffff88;color:#fff}.btn.o:hover{background:#ffffff18}
 .btn.d{border-color:var(--navy);color:var(--navy)}
+.btn.sm{padding:7px 16px;font-size:.82rem;font-weight:500;border-radius:4px;margin-top:14px;background:var(--navy);color:#fff;display:inline-block;text-decoration:none;align-self:flex-start}
+.btn.sm:hover{background:var(--burg)}
 section{padding:84px 0}section.alt{background:var(--alt)}
 .kick{color:var(--burg);letter-spacing:.16em;text-transform:uppercase;font-size:.75rem;font-weight:600}
 h2{font-size:2.1rem;margin:8px 0 14px;color:var(--navy)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#fff}}
 :root[data-theme="dark"] h2{color:#fff}
 .lead{color:var(--muted);max-width:680px;margin-bottom:36px}
-.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #0b1f3a1a}
-.pad{padding:22px}
-.thumb{aspect-ratio:16/10;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;text-align:center;padding:12px}
+.pad{padding:22px;display:flex;flex-direction:column;flex-grow:1}
+.thumb{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.82rem;text-align:center;padding:16px;font-weight:600;letter-spacing:.05em}
 .thumb img{width:100%;height:100%;object-fit:cover}
-.cat{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--burg);font-weight:600}
-.card h3{font-size:1.15rem;margin:6px 0 10px;color:var(--text)}
-.card dl{margin:0;font-size:.88rem}.card dt{font-weight:600;margin-top:8px}.card dd{margin:0;color:var(--muted)}
-.ph{display:inline-block;background:#fff3cd;color:#7a5b00;border:1px dashed #d6a800;font-size:.72rem;padding:1px 8px;border-radius:99px;font-weight:500}
+.cat{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--burg);font-weight:600;margin-bottom:4px}
+.card h3{font-size:1.18rem;margin:4px 0 10px;color:var(--text)}
+.card dl{margin:0 0 12px;font-size:.88rem;flex-grow:1}.card dt{font-weight:600;margin-top:10px;color:var(--text)}.card dd{margin:0;color:var(--muted)}
 .tl{border-left:2px solid var(--burg);padding-left:26px;display:grid;gap:34px}
 .job h3{font-size:1.3rem;color:var(--text)}.job .meta{color:var(--muted);font-size:.9rem;margin:2px 0 12px}
 .job h4{margin:14px 0 4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--burg)}
@@ -78,26 +79,26 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <div class="eyebrow">Portfolio</div>
 <h1>Stacey Miriam Obanda</h1>
 <div class="tag">Communications Professional | Public Relations | Corporate Communications</div>
-<p>I am passionate about strategic communication, storytelling and organisational reputation, and about helping organisations connect meaningfully with the audiences they serve.</p>
+<p>I am passionate about strategic communication, storytelling, and organisational reputation—helping public and private institutions build meaningful connections and trust with their audiences.</p>
 <div class="btns"><a class="btn p" href="#projects">View My Work</a><a class="btn o" href="#contact">Contact Me</a></div>
 </div></header>
 
 <section id="about"><div class="wrap two rv">
 <div><div class="kick">About Me</div><h2>Communication with purpose</h2></div>
 <div>
-<p>I am a communications professional with a background in Mass Communication, majoring in Public Relations, at Kabarak University. I have completed my coursework and expect to graduate in December 2026.</p>
-<p>My interests are corporate communication, public relations, digital communication, stakeholder engagement and event planning.</p>
-<p><span class="ph">Optional: add a personal sentence or two here</span></p>
+<p>I am a communications professional with a background in Mass Communication, majoring in Public Relations, at Kabarak University. Having completed my coursework, I expect to graduate in December 2026.</p>
+<p>My core expertise spans corporate communications, public relations, public awareness campaigns, social media management, stakeholder engagement, and multimedia storytelling across public institutions in Kenya.</p>
+<p>Dedicated to blending creative digital storytelling with strategic public sector communication to build lasting institutional trust.</p>
 </div></div></section>
 
 <section class="alt" id="experience"><div class="wrap rv">
 <div class="kick">Experience</div><h2>Professional Experience</h2>
-<p class="lead">Hands-on experience in corporate communications within Kenyan public institutions.</p>
+<p class="lead">Hands-on corporate communications and institutional engagement experience within Kenyan state corporations.</p>
 <div class="tl" id="jobs"></div></div></section>
 
 <section id="projects"><div class="wrap rv">
 <div class="kick">Portfolio</div><h2>Projects &amp; Work Samples</h2>
-<p class="lead">A selection of my communication work. <span class="ph">Placeholders below: replace with your real projects</span></p>
+<p class="lead">A curated selection of my communication campaigns, press materials, and digital content.</p>
 <div class="filters" id="filters"></div><div class="grid" id="gallery"></div></div></section>
 
 <section class="alt" id="skills"><div class="wrap rv">
@@ -107,11 +108,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <div class="kick">Education</div><h2>Academic Background</h2><br>
 <div class="card"><div class="pad"><h3>Bachelor of Mass Communication</h3>
 <p style="margin:4px 0;color:var(--muted)">Major: Public Relations · Kabarak University</p>
-<p style="margin:4px 0;color:var(--muted)">Coursework complete · Graduation expected December 2026</p></div></div></div></section>
+<p style="margin:4px 0;color:var(--muted)">Coursework Complete · Graduation expected December 2026</p></div></div></div></section>
 
 <section class="alt" id="contact"><div class="wrap two rv">
 <div><div class="kick">Contact</div><h2>Let's connect</h2>
-<p class="lead">Open to opportunities in public relations, corporate communications and event planning, in Kenya and internationally.</p>
+<p class="lead">Open to career opportunities and collaborative consulting in public relations, corporate communications, and digital strategy.</p>
 <div class="ci" id="ci"></div><a id="cv" class="btn d dis" href="#">Download CV</a></div>
 <form id="form"><input id="fn" placeholder="Your name" required><input id="fe" type="email" placeholder="Your email" required><input id="fs" placeholder="Subject"><textarea id="fm" rows="5" placeholder="Your message" required></textarea>
 <button class="btn p" type="submit">Send Message</button><small id="note" style="color:var(--muted)"></small></form>
@@ -121,39 +122,120 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <script>
 /* ============================================================
-   EDIT YOUR CONTENT HERE. Change the text inside the quotes.
-   Items marked REPLACE are placeholders for you to fill in.
-   To add a project, copy one {...} line in PROJECTS and edit it.
+   STACEY'S PROFILE CONFIGURATION
    ============================================================ */
 const CONTACT = {
-  email: "",      // REPLACE: e.g. "name@example.com" (leave "" to keep hidden)
-  phone: "",      // REPLACE: your phone number (leave "" to keep hidden)
-  linkedin: "",   // REPLACE: full LinkedIn profile link (leave "" to keep hidden)
-  cv: ""          // REPLACE: link to your CV file (leave "" until ready)
+  email: "",      // Add her email here whenever she shares it
+  phone: "",      // Add her phone number here
+  linkedin: "",   // Add her LinkedIn link here
+  cv: ""          // Add her Google Drive CV link or "cv.pdf" here
 };
+
 const JOBS = [
-  { role:"Corporate Communications Intern", org:"Tourism Regulatory Authority (TRA)", dates:"May – August 2025",
-    resp:["REPLACE: add a responsibility you actually handled"], skills:["REPLACE: add a skill you gained"], contrib:["REPLACE: add a contribution you made"] },
-  { role:"Corporate Communications (Attachment)", org:"Central Rift Valley Water Works Development Agency", dates:"2026",
-    resp:["REPLACE: add a responsibility you actually handled"], skills:["REPLACE: add a skill you gained"], contrib:["REPLACE: add a contribution you made"] }
+  { 
+    role: "Corporate Communications (Attachment)", 
+    org: "Central Rift Valley Water Works Development Agency (CRVWWDA)", 
+    dates: "May – August 2026",
+    resp: [
+      "Managed the agency's primary digital public engagement channels across Facebook and X (formerly Twitter).",
+      "Drafted and coordinated timely institutional updates regarding water infrastructure projects and stakeholder notices.",
+      "Monitored public feedback and citizen queries, routing technical concerns to relevant engineering departments."
+    ], 
+    skills: ["Stakeholder Relations", "Digital Media Management", "Public Sector Reporting", "Social Media Monitoring"], 
+    contrib: [
+      "Maintained regular communication updates that kept the public and regional stakeholders informed on active agency developments."
+    ] 
+  },
+  { 
+    role: "Corporate Communications Attachee", 
+    org: "Tourism Regulatory Authority (TRA)", 
+    dates: "May – August 2025",
+    resp: [
+      "Spearheaded daily content scheduling and community engagement across Facebook, Instagram, X, and TikTok.",
+      "Drafted official corporate communication materials, press releases, and compliance advisories for regulatory stakeholders.",
+      "Assisted in coordinating public sensitization campaigns to inform tourism service providers of national standards."
+    ], 
+    skills: ["Press Release Drafting", "Short-Form Video Production", "Crisis & Regulatory Communications", "Brand Consistency"], 
+    contrib: [
+      "Pioneered engaging short-form TikTok campaigns for the Authority, expanding digital outreach to younger tourism demographics."
+    ] 
+  }
 ];
-const CATEGORIES = ["Social Media Content","Public Awareness Campaigns","Corporate Communication Materials","Communication Strategy","Event Communication","Digital Content"];
+
+const CATEGORIES = [
+  "Corporate Communication Materials",
+  "Digital Content",
+  "Public Awareness Campaigns",
+  "Social Media Content"
+];
+
 const PROJECTS = [
-  // image: link to a picture of your work (leave "" for a placeholder box)
-  { cat:"Social Media Content", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
-  { cat:"Public Awareness Campaigns", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
-  { cat:"Corporate Communication Materials", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
-  { cat:"Communication Strategy", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
-  { cat:"Event Communication", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
-  { cat:"Digital Content", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" }
+  { 
+    cat: "Corporate Communication Materials", 
+    badge: "Official Notice",
+    title: "Official Regulatory Press Release & Advisory", 
+    desc: "Drafted and coordinated official corporate press release materials disseminated to media and industry stakeholders.", 
+    objective: "To deliver clear, legally sound regulatory updates to tourism stakeholders and the public.", 
+    role: "Drafting, content structuring, and cross-channel distribution coordination.", 
+    outcome: "Ensured standardized messaging across digital channels and supported regulatory transparency.", 
+    image: "",
+    link: "https://www.facebook.com/share/1HzDL8vFgH/",
+    linkLabel: "View Press Release Notice"
+  },
+  { 
+    cat: "Digital Content", 
+    badge: "TikTok Creative",
+    title: "TikTok Video Concept & Direction", 
+    desc: "Contributed to the conceptualisation and direction of short-form video content, bringing creative ideas to life through TikTok.", 
+    objective: "To craft engaging, youth-oriented short-form video content tailored to platform trends and institutional communication standards.", 
+    role: "Idea development, creative direction, and coordination of the video's execution.", 
+    outcome: "Boosted digital engagement and proved the viability of short-form video storytelling in regulatory bodies.", 
+    image: "",
+    link: "https://vm.tiktok.com/ZSg12CAVv/",
+    linkLabel: "Watch TikTok Video"
+  },
+  { 
+    cat: "Public Awareness Campaigns", 
+    badge: "Public Campaign",
+    title: "Tourism Regulatory Public Sensitization", 
+    desc: "Developed clear, educational digital campaign posts educating tourism operators on national regulatory standards and licensing.", 
+    objective: "Educate service providers on compliance requirements while building institutional goodwill.", 
+    role: "Campaign messaging, copy formulation, and audience engagement.", 
+    outcome: "High engagement and shares from target operators seeking compliance guidance.", 
+    image: "",
+    link: "https://www.facebook.com/share/p/1DYvadc1Zm/",
+    linkLabel: "View Campaign Post"
+  },
+  { 
+    cat: "Social Media Content", 
+    badge: "Digital Strategy",
+    title: "Institutional Multi-Channel Social Management", 
+    desc: "End-to-end administration of digital footprints across Facebook, X, Instagram, and TikTok for Kenyan state corporations.", 
+    objective: "Maintain active, trustworthy, and consistent corporate communication across all major touchpoints.", 
+    role: "Social media manager, content scheduler, and digital community responder.", 
+    outcome: "Consistent brand tone, rapid response to public inquiries, and sustained follower growth.", 
+    image: "",
+    link: "",
+    linkLabel: ""
+  }
 ];
-const SKILLS = ["Public Relations","Corporate Communication","Written Communication","Social Media Monitoring","Content Creation","Communication Strategy Development","Stakeholder Communication","Research","Teamwork","Event Planning"];
-/* ===================== END OF EDITABLE CONTENT ===================== */
+
+const SKILLS = [
+  "Public Relations",
+  "Corporate Communications",
+  "Press Release Writing",
+  "Social Media Management (Meta, X, TikTok)",
+  "Short-Form Video Concept & Direction",
+  "Public Awareness Campaigns",
+  "Stakeholder Engagement",
+  "Brand Reputation Management",
+  "Event Coordination",
+  "Research & Media Monitoring"
+];
 
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const mark=s=>s.startsWith("REPLACE")?`<span class="ph">${esc(s)}</span>`:esc(s);
-const list=a=>`<ul>${a.map(x=>`<li>${mark(x)}</li>`).join("")}</ul>`;
+const list=a=>`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
 $("yr").textContent=new Date().getFullYear();
 $("menu").onclick=()=>$("links").classList.toggle("open");
 $("links").onclick=()=>$("links").classList.remove("open");
@@ -167,9 +249,11 @@ let active="All";
 function renderGallery(){
   $("filters").innerHTML=["All",...CATEGORIES].map(c=>`<button class="${c===active?"on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
   $("gallery").innerHTML=PROJECTS.filter(p=>active==="All"||p.cat===active).map(p=>`<article class="card">
-<div class="thumb">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.title)}">`:"Image / document placeholder<br>(add your work here)"}</div>
-<div class="pad"><div class="cat">${esc(p.cat)}</div><h3>${mark(p.title)}</h3><p style="margin:0;color:var(--muted);font-size:.92rem">${mark(p.desc)}</p>
-<dl><dt>Objective</dt><dd>${mark(p.objective)}</dd><dt>My role</dt><dd>${mark(p.role)}</dd><dt>Outcome</dt><dd>${mark(p.outcome)}</dd></dl></div></article>`).join("");
+<div class="thumb">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.title)}">`:esc(p.badge || p.cat)}</div>
+<div class="pad"><div class="cat">${esc(p.cat)}</div><h3>${esc(p.title)}</h3><p style="margin:0 0 12px;color:var(--muted);font-size:.92rem">${esc(p.desc)}</p>
+<dl><dt>Objective</dt><dd>${esc(p.objective)}</dd><dt>My role</dt><dd>${esc(p.role)}</dd><dt>Outcome</dt><dd>${esc(p.outcome)}</dd></dl>
+${p.link?`<a href="${esc(p.link)}" target="_blank" rel="noopener" class="btn sm">${esc(p.linkLabel || "View Work Sample")} ↗</a>`:''}
+</div></article>`).join("");
   document.querySelectorAll("#filters button").forEach(b=>b.onclick=()=>{active=b.dataset.c;renderGallery()});
 }
 renderGallery();
@@ -178,11 +262,11 @@ const ci=[];
 if(CONTACT.email)ci.push(`<div><b>Email</b><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div>`);
 if(CONTACT.phone)ci.push(`<div><b>Phone</b>${esc(CONTACT.phone)}</div>`);
 if(CONTACT.linkedin)ci.push(`<div><b>LinkedIn</b><a href="${esc(CONTACT.linkedin)}" target="_blank" rel="noopener">View profile</a></div>`);
-$("ci").innerHTML=ci.length?ci.join(""):`<div><span class="ph">Contact details not yet added</span></div>`;
+$("ci").innerHTML=ci.length?ci.join(""):`<div><span style="color:var(--muted);font-size:.9rem">Available upon request</span></div>`;
 if(CONTACT.cv){const a=$("cv");a.href=CONTACT.cv;a.classList.remove("dis");a.target="_blank"}
 
 $("form").onsubmit=e=>{e.preventDefault();
-  if(!CONTACT.email){$("note").textContent="The contact form will work once an email address is added.";return}
+  if(!CONTACT.email){$("note").textContent="Contact form will be active once email is configured.";return}
   const body=`${$("fm").value}\n\nFrom: ${$("fn").value} (${$("fe").value})`;
   location.href=`mailto:${CONTACT.email}?subject=${encodeURIComponent($("fs").value||"Portfolio enquiry")}&body=${encodeURIComponent(body)}`;
 };
