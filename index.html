@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stacey Miriam Obanda | Communications Professional</title>
+<title>Stacey Miriam Obanda | Communications & Public Relations Professional</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0B1F3A;--navy2:#13305a;--burg:#7A1F2E;--bg:#fff;--alt:#F5F6F9;--text:#1c2433;--muted:#5b6578;--line:#e3e6ee;--card:#fff;--hero-text:#fff;
@@ -26,12 +26,14 @@ nav ul a{text-decoration:none;font-size:.88rem;opacity:.85}nav ul a:hover{opacit
 .hero .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:#e7b9c1}
 .hero h1{font-size:clamp(2.4rem,6vw,4rem);margin:14px 0 10px}
 .hero .tag{font-size:1.1rem;opacity:.9;margin-bottom:22px}
-.hero p{max-width:620px;opacity:.85}
+.hero p{max-width:640px;opacity:.85}
 .btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
 .btn{display:inline-block;padding:12px 26px;border-radius:4px;text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:inherit}
 .btn.p{background:var(--burg);color:#fff}.btn.p:hover{filter:brightness(1.12)}
 .btn.o{border-color:#ffffff88;color:#fff}.btn.o:hover{background:#ffffff18}
 .btn.d{border-color:var(--navy);color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.d{border-color:#fff;color:#fff}}
+:root[data-theme="dark"] .btn.d{border-color:#fff;color:#fff}
 .btn.sm{padding:7px 16px;font-size:.82rem;font-weight:500;border-radius:4px;margin-top:14px;background:var(--navy);color:#fff;display:inline-block;text-decoration:none;align-self:flex-start}
 .btn.sm:hover{background:var(--burg)}
 section{padding:84px 0}section.alt{background:var(--alt)}
@@ -44,8 +46,7 @@ h2{font-size:2.1rem;margin:8px 0 14px;color:var(--navy)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #0b1f3a1a}
 .pad{padding:22px;display:flex;flex-direction:column;flex-grow:1}
-.thumb{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.82rem;text-align:center;padding:16px;font-weight:600;letter-spacing:.05em}
-.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:16px;font-weight:600;letter-spacing:.05em}
 .cat{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--burg);font-weight:600;margin-bottom:4px}
 .card h3{font-size:1.18rem;margin:4px 0 10px;color:var(--text)}
 .card dl{margin:0 0 12px;font-size:.88rem;flex-grow:1}.card dt{font-weight:600;margin-top:10px;color:var(--text)}.card dd{margin:0;color:var(--muted)}
@@ -63,8 +64,7 @@ h2{font-size:2.1rem;margin:8px 0 14px;color:var(--navy)}
 form{display:grid;gap:14px}
 input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;background:var(--card);color:var(--text)}
 input:focus,textarea:focus{outline:2px solid var(--burg);outline-offset:0}
-.ci{display:grid;gap:14px;margin-bottom:22px}.ci div{font-size:.95rem}.ci b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--burg)}
-.btn.dis{opacity:.5;pointer-events:none}
+.ci{display:grid;gap:16px;margin-bottom:26px}.ci div{font-size:.95rem}.ci b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--burg);margin-bottom:2px}
 footer{background:var(--navy);color:#cfd6e6;padding:36px 0;font-size:.88rem}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
@@ -78,86 +78,94 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <header class="hero" id="home"><div class="wrap">
 <div class="eyebrow">Portfolio</div>
 <h1>Stacey Miriam Obanda</h1>
-<div class="tag">Communications Professional | Public Relations | Corporate Communications</div>
-<p>I am passionate about strategic communication, storytelling, and organisational reputation—helping public and private institutions build meaningful connections and trust with their audiences.</p>
+<div class="tag">Public Relations &amp; Corporate Communications | Content Creation</div>
+<p>Mass Communication practitioner specializing in Public Relations, with hands-on, sector-tested experience translating public institutional priorities into clear, engaging communication across digital and formal channels.</p>
 <div class="btns"><a class="btn p" href="#projects">View My Work</a><a class="btn o" href="#contact">Contact Me</a></div>
 </div></header>
 
 <section id="about"><div class="wrap two rv">
 <div><div class="kick">About Me</div><h2>Communication with purpose</h2></div>
 <div>
-<p>I am a communications professional with a background in Mass Communication, majoring in Public Relations, at Kabarak University. Having completed my coursework, I expect to graduate in December 2026.</p>
-<p>My core expertise spans corporate communications, public relations, public awareness campaigns, social media management, stakeholder engagement, and multimedia storytelling across public institutions in Kenya.</p>
-<p>Dedicated to blending creative digital storytelling with strategic public sector communication to build lasting institutional trust.</p>
+<p>I am a communications professional based in Nairobi, Kenya, completing my Bachelor of Mass Communication with a major in Public Relations at Kabarak University (Graduation expected December 2026).</p>
+<p>Having served in communications departments at both the <strong>Central Rift Valley Water Works Development Agency (CRVWWDA)</strong> and the <strong>Tourism Regulatory Authority (TRA)</strong>, I specialize in translating complex institutional objectives into impactful social campaigns, public awareness materials, and stakeholder messaging.</p>
+<p>Known for strong writing, creative problem-solving, reliability under deadline, and a fast-learning approach to team-based communications.</p>
 </div></div></section>
 
 <section class="alt" id="experience"><div class="wrap rv">
 <div class="kick">Experience</div><h2>Professional Experience</h2>
-<p class="lead">Hands-on corporate communications and institutional engagement experience within Kenyan state corporations.</p>
+<p class="lead">Hands-on corporate communications and institutional engagement experience within Kenyan public institutions.</p>
 <div class="tl" id="jobs"></div></div></section>
 
 <section id="projects"><div class="wrap rv">
 <div class="kick">Portfolio</div><h2>Projects &amp; Work Samples</h2>
-<p class="lead">A curated selection of my communication campaigns, press materials, and digital content.</p>
+<p class="lead">Curated campaign samples, press communications, and multimedia storytelling from my professional experience.</p>
 <div class="filters" id="filters"></div><div class="grid" id="gallery"></div></div></section>
 
 <section class="alt" id="skills"><div class="wrap rv">
-<div class="kick">Skills</div><h2>Core Skills</h2><br><div class="chips" id="skillList"></div></div></section>
+<div class="kick">Skills</div><h2>Core Skills &amp; Competencies</h2><br><div class="chips" id="skillList"></div></div></section>
 
 <section id="education"><div class="wrap rv">
 <div class="kick">Education</div><h2>Academic Background</h2><br>
-<div class="card"><div class="pad"><h3>Bachelor of Mass Communication</h3>
-<p style="margin:4px 0;color:var(--muted)">Major: Public Relations · Kabarak University</p>
-<p style="margin:4px 0;color:var(--muted)">Coursework Complete · Graduation expected December 2026</p></div></div></div></section>
+<div style="display:grid;gap:18px">
+<div class="card"><div class="pad"><h3>Bachelor of Mass Communication (Public Relations)</h3>
+<p style="margin:4px 0;color:var(--muted)">Kabarak University · Expected Graduation: December 2026</p>
+<p style="margin:4px 0;font-size:.88rem;color:var(--muted)">Relevant Coursework: Public Relations, Corporate Communication, Integrated Marketing Communication, Advertising, Events Planning and Management, Research Methods, Public Speaking.</p></div></div>
+
+<div class="card"><div class="pad"><h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+<p style="margin:4px 0;color:var(--muted)">St. Francis Rang'ala Girls High School, Siaya</p></div></div>
+
+<div class="card"><div class="pad"><h3>Kenya Certificate of Primary Education (KCPE)</h3>
+<p style="margin:4px 0;color:var(--muted)">Nyasanda Primary School, Siaya</p></div></div>
+</div></div></section>
 
 <section class="alt" id="contact"><div class="wrap two rv">
 <div><div class="kick">Contact</div><h2>Let's connect</h2>
-<p class="lead">Open to career opportunities and collaborative consulting in public relations, corporate communications, and digital strategy.</p>
-<div class="ci" id="ci"></div><a id="cv" class="btn d dis" href="#">Download CV</a></div>
+<p class="lead">Open to full-time career opportunities and collaborative roles in public relations, corporate communications, and digital strategy.</p>
+<div class="ci" id="ci"></div><a id="cv" class="btn d" href="./Stacey_Miriam_Obanda_CV.pdf" target="_blank" download>Download CV (PDF)</a></div>
 <form id="form"><input id="fn" placeholder="Your name" required><input id="fe" type="email" placeholder="Your email" required><input id="fs" placeholder="Subject"><textarea id="fm" rows="5" placeholder="Your message" required></textarea>
 <button class="btn p" type="submit">Send Message</button><small id="note" style="color:var(--muted)"></small></form>
 </div></section>
 
-<footer><div class="wrap"><span>© <span id="yr"></span> Stacey Miriam Obanda</span><span>Communications Professional · Public Relations · Corporate Communications</span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Stacey Miriam Obanda</span><span>Communications Professional · Public Relations · Nairobi, Kenya</span></div></footer>
 
 <script>
-/* ============================================================
-   STACEY'S PROFILE CONFIGURATION
-   ============================================================ */
 const CONTACT = {
-  email: "",      // Add her email here whenever she shares it
-  phone: "",      // Add her phone number here
-  linkedin: "",   // Add her LinkedIn link here
-  cv: ""          // Add her Google Drive CV link or "cv.pdf" here
+  email: "miriamstacey198@gmail.com",
+  phone: "+254 769 885 202",
+  linkedin: "https://www.linkedin.com/in/stacey-miriam-057854443",
+  cv: "./Stacey_Miriam_Obanda_CV.pdf"
 };
 
 const JOBS = [
   { 
-    role: "Corporate Communications (Attachment)", 
+    role: "Corporate Communications Attaché", 
     org: "Central Rift Valley Water Works Development Agency (CRVWWDA)", 
-    dates: "May – August 2026",
+    dates: "May 2026 – August 2026",
     resp: [
-      "Managed the agency's primary digital public engagement channels across Facebook and X (formerly Twitter).",
-      "Drafted and coordinated timely institutional updates regarding water infrastructure projects and stakeholder notices.",
-      "Monitored public feedback and citizen queries, routing technical concerns to relevant engineering departments."
+      "Supported the Corporate Communications Department in coordinating communication content across digital platforms to maintain consistent institutional tone.",
+      "Designed and adapted social media content, posters, and public awareness materials using Canva and digital design tools.",
+      "Developed communication support for community-focused water and sanitation initiatives, translating technical project milestones into accessible public updates.",
+      "Contributed to event planning, logistics, messaging materials, and on-the-day departmental coordination.",
+      "Assisted with report writing, documentation, and institutional communication protocols."
     ], 
-    skills: ["Stakeholder Relations", "Digital Media Management", "Public Sector Reporting", "Social Media Monitoring"], 
+    skills: ["Stakeholder Relations", "Canva & Graphic Design", "Public Sector Reporting", "Social Media Monitoring", "Event Planning"], 
     contrib: [
-      "Maintained regular communication updates that kept the public and regional stakeholders informed on active agency developments."
+      "Produced design-led awareness materials that made technical infrastructure updates accessible and engaging to general public audiences."
     ] 
   },
   { 
-    role: "Corporate Communications Attachee", 
+    role: "Corporate Communications Attaché", 
     org: "Tourism Regulatory Authority (TRA)", 
-    dates: "May – August 2025",
+    dates: "May 2025 – August 2025",
     resp: [
-      "Spearheaded daily content scheduling and community engagement across Facebook, Instagram, X, and TikTok.",
-      "Drafted official corporate communication materials, press releases, and compliance advisories for regulatory stakeholders.",
-      "Assisted in coordinating public sensitization campaigns to inform tourism service providers of national standards."
+      "Supported day-to-day digital communication and content scheduling across Facebook, Instagram, X (Twitter), and TikTok.",
+      "Assisted in developing public-facing communication materials, regulatory updates, and sector advisories.",
+      "Applied public relations, writing, and editing skills in a fast-paced state regulatory environment, reinforcing audience fit and accuracy.",
+      "Collaborated with the communications team on routine departmental tasks and stakeholder engagement."
     ], 
     skills: ["Press Release Drafting", "Short-Form Video Production", "Crisis & Regulatory Communications", "Brand Consistency"], 
     contrib: [
-      "Pioneered engaging short-form TikTok campaigns for the Authority, expanding digital outreach to younger tourism demographics."
+      "Spearheaded creative TikTok short-form video concepts to expand TRA's reach and engagement with younger tourism demographics."
     ] 
   }
 ];
@@ -174,8 +182,8 @@ const PROJECTS = [
     cat: "Corporate Communication Materials", 
     badge: "Official Notice",
     title: "Official Regulatory Press Release & Advisory", 
-    desc: "Drafted and coordinated official corporate press release materials disseminated to media and industry stakeholders.", 
-    objective: "To deliver clear, legally sound regulatory updates to tourism stakeholders and the public.", 
+    desc: "Drafted and distributed official corporate press release materials disseminated to media and industry stakeholders.", 
+    objective: "To deliver clear, timely, and authoritative regulatory updates to tourism stakeholders and the public.", 
     role: "Drafting, content structuring, and cross-channel distribution coordination.", 
     outcome: "Ensured standardized messaging across digital channels and supported regulatory transparency.", 
     image: "",
@@ -187,7 +195,7 @@ const PROJECTS = [
     badge: "TikTok Creative",
     title: "TikTok Video Concept & Direction", 
     desc: "Contributed to the conceptualisation and direction of short-form video content, bringing creative ideas to life through TikTok.", 
-    objective: "To craft engaging, youth-oriented short-form video content tailored to platform trends and institutional communication standards.", 
+    objective: "To create engaging short-form video content suited to platform trends and institutional communication standards.", 
     role: "Idea development, creative direction, and coordination of the video's execution.", 
     outcome: "Boosted digital engagement and proved the viability of short-form video storytelling in regulatory bodies.", 
     image: "",
@@ -221,16 +229,18 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
+  "Corporate Communication",
   "Public Relations",
-  "Corporate Communications",
-  "Press Release Writing",
+  "Content Writing & Editing",
+  "Report Writing",
   "Social Media Management (Meta, X, TikTok)",
-  "Short-Form Video Concept & Direction",
-  "Public Awareness Campaigns",
+  "Canva & Basic Graphic Design",
+  "Public Speaking",
+  "Photography",
+  "Event Planning Support",
   "Stakeholder Engagement",
-  "Brand Reputation Management",
-  "Event Coordination",
-  "Research & Media Monitoring"
+  "Microsoft Word, Excel & PowerPoint",
+  "Integrated Marketing Communication"
 ];
 
 const $=id=>document.getElementById(id);
@@ -259,16 +269,15 @@ ${p.link?`<a href="${esc(p.link)}" target="_blank" rel="noopener" class="btn sm"
 renderGallery();
 
 const ci=[];
-if(CONTACT.email)ci.push(`<div><b>Email</b><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div>`);
-if(CONTACT.phone)ci.push(`<div><b>Phone</b>${esc(CONTACT.phone)}</div>`);
-if(CONTACT.linkedin)ci.push(`<div><b>LinkedIn</b><a href="${esc(CONTACT.linkedin)}" target="_blank" rel="noopener">View profile</a></div>`);
-$("ci").innerHTML=ci.length?ci.join(""):`<div><span style="color:var(--muted);font-size:.9rem">Available upon request</span></div>`;
-if(CONTACT.cv){const a=$("cv");a.href=CONTACT.cv;a.classList.remove("dis");a.target="_blank"}
+ci.push(`<div><b>Email</b><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div>`);
+ci.push(`<div><b>Phone</b><a href="tel:${esc(CONTACT.phone)}">${esc(CONTACT.phone)}</a></div>`);
+ci.push(`<div><b>LinkedIn</b><a href="${esc(CONTACT.linkedin)}" target="_blank" rel="noopener">linkedin.com/in/stacey-miriam</a></div>`);
+$("ci").innerHTML=ci.join("");
 
-$("form").onsubmit=e=>{e.preventDefault();
-  if(!CONTACT.email){$("note").textContent="Contact form will be active once email is configured.";return}
+$("form").onsubmit=e=>{
+  e.preventDefault();
   const body=`${$("fm").value}\n\nFrom: ${$("fn").value} (${$("fe").value})`;
-  location.href=`mailto:${CONTACT.email}?subject=${encodeURIComponent($("fs").value||"Portfolio enquiry")}&body=${encodeURIComponent(body)}`;
+  location.href=`mailto:${CONTACT.email}?subject=${encodeURIComponent($("fs").value||"Portfolio Enquiry")}&body=${encodeURIComponent(body)}`;
 };
 
 const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.08});
