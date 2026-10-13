@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stacey Miriam Obanda | Communications Professional</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--navy2:#13305a;--burg:#7A1F2E;--bg:#fff;--alt:#F5F6F9;--text:#1c2433;--muted:#5b6578;--line:#e3e6ee;--card:#fff;--hero-text:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1424;--alt:#0f1c31;--text:#e8ecf4;--muted:#a3adc2;--line:#223152;--card:#122038;--burg:#c4566a}}
+:root[data-theme="dark"]{--bg:#0a1424;--alt:#0f1c31;--text:#e8ecf4;--muted:#a3adc2;--line:#223152;--card:#122038;--burg:#c4566a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav .logo{font-family:'Playfair Display',Georgia,serif;font-weight:600;text-decoration:none;font-size:1.1rem}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font-size:.88rem;opacity:.85}nav ul a:hover{opacity:1}
+#menu{display:none;background:none;border:1px solid #ffffff55;color:#fff;border-radius:6px;padding:6px 10px;font-size:1rem}
+@media(max-width:760px){#menu{display:block}nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:16px 24px;gap:14px}nav ul.open{display:flex}}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:110px 0 96px}
+.hero .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:#e7b9c1}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);margin:14px 0 10px}
+.hero .tag{font-size:1.1rem;opacity:.9;margin-bottom:22px}
+.hero p{max-width:620px;opacity:.85}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:12px 26px;border-radius:4px;text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn.p{background:var(--burg);color:#fff}.btn.p:hover{filter:brightness(1.12)}
+.btn.o{border-color:#ffffff88;color:#fff}.btn.o:hover{background:#ffffff18}
+.btn.d{border-color:var(--navy);color:var(--navy)}
+section{padding:84px 0}section.alt{background:var(--alt)}
+.kick{color:var(--burg);letter-spacing:.16em;text-transform:uppercase;font-size:.75rem;font-weight:600}
+h2{font-size:2.1rem;margin:8px 0 14px;color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#fff}}
+:root[data-theme="dark"] h2{color:#fff}
+.lead{color:var(--muted);max-width:680px;margin-bottom:36px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #0b1f3a1a}
+.pad{padding:22px}
+.thumb{aspect-ratio:16/10;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;text-align:center;padding:12px}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.cat{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--burg);font-weight:600}
+.card h3{font-size:1.15rem;margin:6px 0 10px;color:var(--text)}
+.card dl{margin:0;font-size:.88rem}.card dt{font-weight:600;margin-top:8px}.card dd{margin:0;color:var(--muted)}
+.ph{display:inline-block;background:#fff3cd;color:#7a5b00;border:1px dashed #d6a800;font-size:.72rem;padding:1px 8px;border-radius:99px;font-weight:500}
+.tl{border-left:2px solid var(--burg);padding-left:26px;display:grid;gap:34px}
+.job h3{font-size:1.3rem;color:var(--text)}.job .meta{color:var(--muted);font-size:.9rem;margin:2px 0 12px}
+.job h4{margin:14px 0 4px;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--burg)}
+.job ul{margin:0;padding-left:18px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1px solid var(--line);background:var(--card);padding:9px 18px;border-radius:99px;font-size:.92rem}
+.chip::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--burg);margin-right:10px;vertical-align:middle}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.filters button{font:inherit;font-size:.82rem;padding:7px 15px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}
+.filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.two{display:grid;gap:40px;grid-template-columns:1fr 1fr}@media(max-width:760px){.two{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;background:var(--card);color:var(--text)}
+input:focus,textarea:focus{outline:2px solid var(--burg);outline-offset:0}
+.ci{display:grid;gap:14px;margin-bottom:22px}.ci div{font-size:.95rem}.ci b{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--burg)}
+.btn.dis{opacity:.5;pointer-events:none}
+footer{background:var(--navy);color:#cfd6e6;padding:36px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#home">S. M. Obanda</a><button id="menu" aria-label="Menu">☰</button>
+<ul id="links"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+<div class="eyebrow">Portfolio</div>
+<h1>Stacey Miriam Obanda</h1>
+<div class="tag">Communications Professional | Public Relations | Corporate Communications</div>
+<p>I am passionate about strategic communication, storytelling and organisational reputation, and about helping organisations connect meaningfully with the audiences they serve.</p>
+<div class="btns"><a class="btn p" href="#projects">View My Work</a><a class="btn o" href="#contact">Contact Me</a></div>
+</div></header>
+
+<section id="about"><div class="wrap two rv">
+<div><div class="kick">About Me</div><h2>Communication with purpose</h2></div>
+<div>
+<p>I am a communications professional with a background in Mass Communication, majoring in Public Relations, at Kabarak University. I have completed my coursework and expect to graduate in December 2026.</p>
+<p>My interests are corporate communication, public relations, digital communication, stakeholder engagement and event planning.</p>
+<p><span class="ph">Optional: add a personal sentence or two here</span></p>
+</div></div></section>
+
+<section class="alt" id="experience"><div class="wrap rv">
+<div class="kick">Experience</div><h2>Professional Experience</h2>
+<p class="lead">Hands-on experience in corporate communications within Kenyan public institutions.</p>
+<div class="tl" id="jobs"></div></div></section>
+
+<section id="projects"><div class="wrap rv">
+<div class="kick">Portfolio</div><h2>Projects &amp; Work Samples</h2>
+<p class="lead">A selection of my communication work. <span class="ph">Placeholders below: replace with your real projects</span></p>
+<div class="filters" id="filters"></div><div class="grid" id="gallery"></div></div></section>
+
+<section class="alt" id="skills"><div class="wrap rv">
+<div class="kick">Skills</div><h2>Core Skills</h2><br><div class="chips" id="skillList"></div></div></section>
+
+<section id="education"><div class="wrap rv">
+<div class="kick">Education</div><h2>Academic Background</h2><br>
+<div class="card"><div class="pad"><h3>Bachelor of Mass Communication</h3>
+<p style="margin:4px 0;color:var(--muted)">Major: Public Relations · Kabarak University</p>
+<p style="margin:4px 0;color:var(--muted)">Coursework complete · Graduation expected December 2026</p></div></div></div></section>
+
+<section class="alt" id="contact"><div class="wrap two rv">
+<div><div class="kick">Contact</div><h2>Let's connect</h2>
+<p class="lead">Open to opportunities in public relations, corporate communications and event planning, in Kenya and internationally.</p>
+<div class="ci" id="ci"></div><a id="cv" class="btn d dis" href="#">Download CV</a></div>
+<form id="form"><input id="fn" placeholder="Your name" required><input id="fe" type="email" placeholder="Your email" required><input id="fs" placeholder="Subject"><textarea id="fm" rows="5" placeholder="Your message" required></textarea>
+<button class="btn p" type="submit">Send Message</button><small id="note" style="color:var(--muted)"></small></form>
+</div></section>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Stacey Miriam Obanda</span><span>Communications Professional · Public Relations · Corporate Communications</span></div></footer>
+
+<script>
+/* ============================================================
+   EDIT YOUR CONTENT HERE. Change the text inside the quotes.
+   Items marked REPLACE are placeholders for you to fill in.
+   To add a project, copy one {...} line in PROJECTS and edit it.
+   ============================================================ */
+const CONTACT = {
+  email: "",      // REPLACE: e.g. "name@example.com" (leave "" to keep hidden)
+  phone: "",      // REPLACE: your phone number (leave "" to keep hidden)
+  linkedin: "",   // REPLACE: full LinkedIn profile link (leave "" to keep hidden)
+  cv: ""          // REPLACE: link to your CV file (leave "" until ready)
+};
+const JOBS = [
+  { role:"Corporate Communications Intern", org:"Tourism Regulatory Authority (TRA)", dates:"May – August 2025",
+    resp:["REPLACE: add a responsibility you actually handled"], skills:["REPLACE: add a skill you gained"], contrib:["REPLACE: add a contribution you made"] },
+  { role:"Corporate Communications (Attachment)", org:"Central Rift Valley Water Works Development Agency", dates:"2026",
+    resp:["REPLACE: add a responsibility you actually handled"], skills:["REPLACE: add a skill you gained"], contrib:["REPLACE: add a contribution you made"] }
+];
+const CATEGORIES = ["Social Media Content","Public Awareness Campaigns","Corporate Communication Materials","Communication Strategy","Event Communication","Digital Content"];
+const PROJECTS = [
+  // image: link to a picture of your work (leave "" for a placeholder box)
+  { cat:"Social Media Content", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
+  { cat:"Public Awareness Campaigns", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
+  { cat:"Corporate Communication Materials", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
+  { cat:"Communication Strategy", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
+  { cat:"Event Communication", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" },
+  { cat:"Digital Content", title:"REPLACE: project title", desc:"REPLACE: short description", objective:"REPLACE", role:"REPLACE", outcome:"REPLACE (only real outcomes)", image:"" }
+];
+const SKILLS = ["Public Relations","Corporate Communication","Written Communication","Social Media Monitoring","Content Creation","Communication Strategy Development","Stakeholder Communication","Research","Teamwork","Event Planning"];
+/* ===================== END OF EDITABLE CONTENT ===================== */
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mark=s=>s.startsWith("REPLACE")?`<span class="ph">${esc(s)}</span>`:esc(s);
+const list=a=>`<ul>${a.map(x=>`<li>${mark(x)}</li>`).join("")}</ul>`;
+$("yr").textContent=new Date().getFullYear();
+$("menu").onclick=()=>$("links").classList.toggle("open");
+$("links").onclick=()=>$("links").classList.remove("open");
+
+$("jobs").innerHTML=JOBS.map(j=>`<div class="job"><h3>${esc(j.role)}</h3><div class="meta">${esc(j.org)} · ${esc(j.dates)}</div>
+<h4>Responsibilities</h4>${list(j.resp)}<h4>Skills gained</h4>${list(j.skills)}<h4>Key contributions</h4>${list(j.contrib)}</div>`).join("");
+
+$("skillList").innerHTML=SKILLS.map(s=>`<span class="chip">${esc(s)}</span>`).join("");
+
+let active="All";
+function renderGallery(){
+  $("filters").innerHTML=["All",...CATEGORIES].map(c=>`<button class="${c===active?"on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  $("gallery").innerHTML=PROJECTS.filter(p=>active==="All"||p.cat===active).map(p=>`<article class="card">
+<div class="thumb">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.title)}">`:"Image / document placeholder<br>(add your work here)"}</div>
+<div class="pad"><div class="cat">${esc(p.cat)}</div><h3>${mark(p.title)}</h3><p style="margin:0;color:var(--muted);font-size:.92rem">${mark(p.desc)}</p>
+<dl><dt>Objective</dt><dd>${mark(p.objective)}</dd><dt>My role</dt><dd>${mark(p.role)}</dd><dt>Outcome</dt><dd>${mark(p.outcome)}</dd></dl></div></article>`).join("");
+  document.querySelectorAll("#filters button").forEach(b=>b.onclick=()=>{active=b.dataset.c;renderGallery()});
+}
+renderGallery();
+
+const ci=[];
+if(CONTACT.email)ci.push(`<div><b>Email</b><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div>`);
+if(CONTACT.phone)ci.push(`<div><b>Phone</b>${esc(CONTACT.phone)}</div>`);
+if(CONTACT.linkedin)ci.push(`<div><b>LinkedIn</b><a href="${esc(CONTACT.linkedin)}" target="_blank" rel="noopener">View profile</a></div>`);
+$("ci").innerHTML=ci.length?ci.join(""):`<div><span class="ph">Contact details not yet added</span></div>`;
+if(CONTACT.cv){const a=$("cv");a.href=CONTACT.cv;a.classList.remove("dis");a.target="_blank"}
+
+$("form").onsubmit=e=>{e.preventDefault();
+  if(!CONTACT.email){$("note").textContent="The contact form will work once an email address is added.";return}
+  const body=`${$("fm").value}\n\nFrom: ${$("fn").value} (${$("fe").value})`;
+  location.href=`mailto:${CONTACT.email}?subject=${encodeURIComponent($("fs").value||"Portfolio enquiry")}&body=${encodeURIComponent(body)}`;
+};
+
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.08});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
