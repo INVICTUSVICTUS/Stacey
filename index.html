@@ -46,7 +46,8 @@ h2{font-size:2.1rem;margin:8px 0 14px;color:var(--navy)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #0b1f3a1a}
 .pad{padding:22px;display:flex;flex-direction:column;flex-grow:1}
-.thumb{aspect-ratio:16/9;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:16px;font-weight:600;letter-spacing:.05em}
+.thumb{aspect-ratio:16/10;background:repeating-linear-gradient(45deg,var(--alt),var(--alt) 12px,var(--line) 12px,var(--line) 13px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;font-weight:600;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
 .cat{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--burg);font-weight:600;margin-bottom:4px}
 .card h3{font-size:1.18rem;margin:4px 0 10px;color:var(--text)}
 .card dl{margin:0 0 12px;font-size:.88rem;flex-grow:1}.card dt{font-weight:600;margin-top:10px;color:var(--text)}.card dd{margin:0;color:var(--muted)}
@@ -142,11 +143,11 @@ const JOBS = [
     org: "Central Rift Valley Water Works Development Agency (CRVWWDA)", 
     dates: "May 2026 – August 2026",
     resp: [
-      "Supported the Corporate Communications Department in coordinating communication content across digital platforms to maintain consistent institutional tone.",
+      "Supported the Corporate Communications Department in developing and coordinating communication content across the Agency's digital platforms, maintaining a consistent institutional voice.",
       "Designed and adapted social media content, posters, and public awareness materials using Canva and digital design tools.",
-      "Developed communication support for community-focused water and sanitation initiatives, translating technical project milestones into accessible public updates.",
+      "Developed communication support for Agency projects, including community-focused water and sanitation initiatives, translating technical project updates into accessible public messaging.",
       "Contributed to event planning, logistics, messaging materials, and on-the-day departmental coordination.",
-      "Assisted with report writing, documentation, and institutional communication protocols."
+      "Assisted with report writing, documentation, and general corporate communications."
     ], 
     skills: ["Stakeholder Relations", "Canva & Graphic Design", "Public Sector Reporting", "Social Media Monitoring", "Event Planning"], 
     contrib: [
@@ -174,55 +175,55 @@ const CATEGORIES = [
   "Corporate Communication Materials",
   "Digital Content",
   "Public Awareness Campaigns",
-  "Social Media Content"
+  "Storytelling & Field Photography"
 ];
 
 const PROJECTS = [
   { 
     cat: "Corporate Communication Materials", 
-    badge: "Official Notice",
-    title: "Official Regulatory Press Release & Advisory", 
-    desc: "Drafted and distributed official corporate press release materials disseminated to media and industry stakeholders.", 
-    objective: "To deliver clear, timely, and authoritative regulatory updates to tourism stakeholders and the public.", 
-    role: "Drafting, content structuring, and cross-channel distribution coordination.", 
-    outcome: "Ensured standardized messaging across digital channels and supported regulatory transparency.", 
-    image: "",
+    badge: "Press Release",
+    title: "Official Press Release: Launch of Uber Safaris in Kenya", 
+    desc: "Drafted and coordinated official corporate press release materials issued by the Tourism Regulatory Authority regarding regulatory guidance and operational compliance for wildlife tour bookings.", 
+    objective: "To deliver clear, legally sound regulatory updates to tourism stakeholders and the public regarding tech-enabled safari operations.", 
+    role: "Drafting, content structuring, and regulatory communication support.", 
+    outcome: "Ensured transparent public communication and reinforced statutory compliance standards.", 
+    image: "./press-release.jpg",
     link: "https://www.facebook.com/share/1HzDL8vFgH/",
     linkLabel: "View Press Release Notice"
   },
   { 
     cat: "Digital Content", 
     badge: "TikTok Creative",
-    title: "TikTok Video Concept & Direction", 
+    title: "TikTok Video Concept and Direction", 
     desc: "Contributed to the conceptualisation and direction of short-form video content, bringing creative ideas to life through TikTok.", 
-    objective: "To create engaging short-form video content suited to platform trends and institutional communication standards.", 
+    objective: "To create engaging short-form video content suited to the platform's audience and modern communication style.", 
     role: "Idea development, creative direction, and coordination of the video's execution.", 
-    outcome: "Boosted digital engagement and proved the viability of short-form video storytelling in regulatory bodies.", 
+    outcome: "Boosted digital audience engagement and pioneered short-form video storytelling in the regulatory sector.", 
     image: "",
     link: "https://vm.tiktok.com/ZSg12CAVv/",
-    linkLabel: "Watch TikTok Video"
+    linkLabel: "Watch on TikTok"
   },
   { 
     cat: "Public Awareness Campaigns", 
-    badge: "Public Campaign",
-    title: "Tourism Regulatory Public Sensitization", 
-    desc: "Developed clear, educational digital campaign posts educating tourism operators on national regulatory standards and licensing.", 
-    objective: "Educate service providers on compliance requirements while building institutional goodwill.", 
-    role: "Campaign messaging, copy formulation, and audience engagement.", 
-    outcome: "High engagement and shares from target operators seeking compliance guidance.", 
-    image: "",
+    badge: "Fun Friday Fact",
+    title: "Fun Friday Fact — The Infrastructure Behind Every Drop of Water", 
+    desc: "A recurring educational social media series aimed at informing the public about water infrastructure and CRVWWDA's role in developing dependable water and sanitation facilities.", 
+    objective: "To simplify institutional information and increase public awareness of the engineering behind water delivery.", 
+    role: "Developed content ideas and created AI-assisted posters, transforming technical water topics into accessible public education graphics.", 
+    outcome: "Engaged regional citizens with clear visual education on water sustainability and agency projects.", 
+    image: "./friday-fun-fact.jpg",
     link: "https://www.facebook.com/share/p/1DYvadc1Zm/",
-    linkLabel: "View Campaign Post"
+    linkLabel: "View Facebook Campaign Post"
   },
   { 
-    cat: "Social Media Content", 
-    badge: "Digital Strategy",
-    title: "Institutional Multi-Channel Social Management", 
-    desc: "End-to-end administration of digital footprints across Facebook, X, Instagram, and TikTok for Kenyan state corporations.", 
-    objective: "Maintain active, trustworthy, and consistent corporate communication across all major touchpoints.", 
-    role: "Social media manager, content scheduler, and digital community responder.", 
-    outcome: "Consistent brand tone, rapid response to public inquiries, and sustained follower growth.", 
-    image: "",
+    cat: "Storytelling & Field Photography", 
+    badge: "Field Coverage",
+    title: "Field Inspection Coverage & Visual Storytelling", 
+    desc: "Captured high-impact on-site photographic documentation during regional water and sanitation project site inspections by Agency leadership and stakeholders.", 
+    objective: "Document project milestones, community impact, and institutional leadership on the ground for corporate reporting and social media.", 
+    role: "On-site photography, stakeholder visual documentation, and narrative capture.", 
+    outcome: "Delivered authentic photo assets that humanised public service delivery and enriched institutional archives.", 
+    image: "./field-photography.jpg",
     link: "",
     linkLabel: ""
   }
@@ -236,7 +237,7 @@ const SKILLS = [
   "Social Media Management (Meta, X, TikTok)",
   "Canva & Basic Graphic Design",
   "Public Speaking",
-  "Photography",
+  "Photography & Visual Storytelling",
   "Event Planning Support",
   "Stakeholder Engagement",
   "Microsoft Word, Excel & PowerPoint",
